@@ -14,6 +14,7 @@ set cursorcolumn
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
@@ -23,10 +24,11 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'vim-scripts/indentLine.vim'
 Plug 'davidhalter/jedi-vim'
-Plug 'nvie/vim-flake8'
+Plug 'andviro/flake8-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'fisadev/vim-isort'
 
 call plug#end()
 
@@ -56,3 +58,5 @@ let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:ctrlp_clear_cache_on_exit = 0
 " let g:airline_theme='powerlineish'
+
+let g:PyFlakeOnWrite = 1
